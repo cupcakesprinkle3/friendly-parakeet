@@ -19,4 +19,4 @@ This is a password generated "after" adding javascript to execute the program:
 This project was originally created by staff and/or affiliates of the UC Berkeley Extension Code Bootcamp.
 
 ## Link to Deployed Application
-(tbd - will go get that :) )
+The link to the deployed application is: https://cupcakesprinkle3.github.io/password-generator/
