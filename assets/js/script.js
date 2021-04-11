@@ -4,7 +4,7 @@
 // This means that everything has to be contained within a function that then starts on button click
 // There's also function scope and global scope ; to call a var outside of a function, it has to be global
 // And += adds to a string
-// And to get the passResult to be empty vs undefined, pass it a blank string ... ""
+// And to get the passResult to be empty vs undefined, pass it a blank string first ... ""
 
 // Assignment code here
 
@@ -24,7 +24,7 @@ var passLength;
   
 function generatePassword() {
 
-  passLength = prompt("Choose password length between 8 and 128 chars : ", "your selection");
+  passLength = prompt("Choose password length between 8 and 128 chars : ", "your numerical selection");
 
   passLength = parseInt(passLength);
   console.log(passLength);
@@ -72,13 +72,12 @@ function writePassword() {
 
   for (var i=0; i<passLength; i++) {
     passResult += fullArray[Math.floor(Math.random() * fullArray.length)];
-    //passResult = passRuls + fullArray[…];
     console.log(passResult);
   }
 
-var passwordText = document.querySelector("#password");
+  var passwordText = document.querySelector("#password");
 
-passwordText.value = passResult;
+  passwordText.value = passResult;
 
 }
 
